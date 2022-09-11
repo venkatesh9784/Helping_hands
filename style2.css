@@ -1,149 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 *{
-	margin:0px;
-	padding:0px;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.section{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #ddd;
-}
-.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top: 100px;
-}
-.content-section{
-	float: left;
-	width: 55%;
-}
-.content-section .title{
-	text-transform: uppercase;
-	font-size: 28px;
-}
-.content-section .content h3{
-	margin-top: 20px;
-	color:#5d5d5d;
-	font-size: 21px;
-}
-.content-section .content p{
-	margin-top: 10px;
-	font-family: sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
-}
-.content-section .content .button{
-	margin-top: 30px;
-}
-.content-section .content .button a{
-	background-color: #3d3d3d;
-	padding:12px 40px;
-	text-decoration: none;
-	color:#fff;
-	font-size: 25px;
-	letter-spacing: 1.5px;
-}
-.content-section .content .button a:hover{
-	background-color: #a52a2a;
-	color:#fff;
-}
-.content-section .social{
-	margin: 40px 40px;
-}
-.content-section .social i{
-	color:#a52a2a;
-	font-size: 30px;
-	padding:0px 10px;
-}
-.content-section .social i:hover{
-	color:#3d3d3d;
-}
-.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    font-family:sans-serif;
+  }
+  
+  .topnav a {
+    float: right;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(21, 21, 192);
+    color:white;
+  }
+  
+  .topnav a.active {
+    background-color:rgb(21, 21, 192);
+    color: white;
+  }
 
-.content-section .title{
-	text-align: center;
-	font-size: 19px;
+.logo{
+    width: 50px;
+    padding-left: 10%;
+    cursor: pointer;
 }
-.content-section .content .button{
-	text-align: center;
-}
-.content-section .content .button a{
-	padding:9px 30px;
-}
-.content-section .social{
-	text-align: center;
-}
-
-.container h1{
-	margin:0px;
-	padding:0px;
-	font-size: 75px;
-	color: black;
-	box-sizing: border-box;
-	text-decoration: wavy;
-	font-family: sans-serif;
-	text-shadow: 5px 5px 5px rgba(19, 17, 17, 0.356);
-}
-.container p{
-	
-	margin:0px;
-	padding:0px;
-	color: black;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+.row{
+ display: flex;
+ justify-content: space-between;
+ align-items:center;
+ margin: 100px 0;
 
 }
-.container h2{
-	
-	margin:0px;
-	padding:0px;
-	color: black;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+.col-1{
+    flex-basis: 60%;
+    position: relative;
+    margin-left: 5%;
+}
+.col-1 h3{
+    font-size: 30px;
+    color:rgb(21, 21, 192);
+    margin: 20px 0 10px;
+}
+button{
+    width: 150px;
+    font-size: large;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: rgb(103, 103, 241);
+    background: linear-gradient(to right,#edecf5,#25a8ff);
+    border-radius: 6px;
+    cursor:pointer;
+    transition: width 0.5s;
+}
+button img {
+    width:30px;
+    display: none;
+}
+button:hover img{
+    display: inline-block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-2{
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
 
 }
-.container h4{
-	padding:0px;
-	font-size: large;
-	color: black;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+.col-2 .image-1{
+    width: 90%;
+    border-radius: 20px 20px 20px 20px;
 }
-.img-1{
-	border-radius: 20px 20px 20px 20px ;
-	width: 45%;
-	height:50%;
-	margin-left: 3%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+.blog{
+ display: flex;
+ justify-content: space-between;
+ align-items:center;
+ margin: 30px 0;
+ position: relative;
+ margin-left:5%
 }
-.img-2{
-	border-radius: 20px 20px 20px 20px;
-	width:45%;
-	height: 50%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+.row-2 h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
 }
-.img-3{
-	border-radius: 20px 20px 20px 20px;
-	width:45%;
-	height: 50%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	margin-left:25% ;
+
+.row-2 p{
+    display: flex;
+    font-size: 20px;
+    color:black;
+    margin-right: 5%;
+    align-items: center;
+    position: relative;
+    flex-basis: 50%;
+    margin-left: 3%;
+
 }
+.row-2 h3{
+    font-size: 24px;
+    margin-left: 3%;
+
+}
+.color-block{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background:linear-gradient(to right,#edecf5,#25a8ff);;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 70%;
+    z-index: -1;
+}
+#im{
+    width: 55%;
+}
+#texts{
+    width: 35%;
+
+}
+.image-2{
+    width: 600px;
+    margin-left: 9%;
+    border-radius: 20px 20px 20px 20px;
+}
+.subhead{
+    margin-left: 20%;
+}
+.subhead h1{
+    font-weight: bolder;
+}
+.card{
+    margin-top:50px;
+    margin-left:5%;
+    width: 30%;
+}
+.img-7{
+    float: left;
+    margin-left:5%;
+    border: #25a8ff;
+    margin-right: 5%;
+    border-radius: 20px 20px 20px 20px;
+    height: 550px;
+}
+.lr-1 h1{
+    font-weight: bolder;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    text-shadow: 3px 3px 3px rgb(5, 5, 16);
+    text-decoration: wavy;
+}
+.lr-1 p{
+    margin-right: 5%;
+    font-size: 18px;
+    color: black;
+}
+input, label {
+    margin: 5px 5px;
+  }
+  
+  .form-group {
+    margin: 30px auto;
+    width: 450px;
+    background-color: aquamarine;
+  }
+  
+  .form-control {
+    float: left;
+  }
+  
+  #inputStreet {
+    width: 100%;
+  }
+  
+  #inputCity {
+    width: 50%;
+  }
+  
+  #inputState {
+    width: 15%;
+  }
+  
+  #inputZip {
+    width: 28%;
+  }
+  
+  #inputCounty {
+    width: 45%;
+  }
+  
+  #inputCountry {
+    width: 50%;
+  }
+  
+
+.lr2 h1{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-left: 25%;
+}
+
+
